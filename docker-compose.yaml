@@ -1,0 +1,23 @@
+// docker-compose.yaml
+version: "3"
+
+services:
+  ambassador:
+    image: datawire/ambassador:1.10.0
+    ports:
+      - 8080:8080
+    volumes:
+      - ./backend/ambassador:/ambassador/ambassador-config
+    environment:
+      - AMBASSADOR_NO_KUBEWATCH=no_kubewatch
+
+  content:
+    build: backend/content/
+    container_name: content
+    command: node app.js
+    hostname: content:3000
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      PORT: 3000

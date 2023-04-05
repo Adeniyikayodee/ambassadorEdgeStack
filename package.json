@@ -1,0 +1,32 @@
+{
+  "name": "ambassadoredgestack",
+  "version": "1.0.0",
+  "description": "Deploying Ambassador Edge Stack as an API Gateway",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adeniyikayodee/ambassadorEdgeStack.git"
+  },
+  "keywords": [
+    "Microservices",
+    "AmbassadorLab",
+    "Edge",
+    "Stack",
+    "API",
+    "Gateway"
+  ],
+  "author": "Kayode Adeniyi <adeniyikayode22@gmail.com> (https://www.linkedin.com/in/kadeniyi/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adeniyikayodee/ambassadorEdgeStack/issues"
+  },
+  "homepage": "https://github.com/Adeniyikayodee/ambassadorEdgeStack#readme",
+  "dependencies": {
+    "express": "4.18.2",
+    "nodemon": "2.0.22"
+  }
+}
