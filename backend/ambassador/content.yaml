@@ -5,4 +5,4 @@ kind: Mapping
 name: get_content
 prefix: /v1/content/
 rewrite: ''
-service: content:3000
+service: content:3001
